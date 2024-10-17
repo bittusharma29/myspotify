@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MySpotify</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>MyMusic</h1>
+        <input type="text" id="search" placeholder="Search for songs..." onkeyup="searchSongs()">
+    </header>
+    <main>
+        <div id="song-list">
+            <!-- Songs will be dynamically inserted here -->
+        </div>
+    </main>
+    <footer>
+        <div id="player">
+            <audio id="audio-player" controls></audio>
+            <p id="current-song">No song playing...</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
